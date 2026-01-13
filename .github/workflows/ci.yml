@@ -1,0 +1,22 @@
+yaml
+
+name:DevOps CI Pipeline
+
+on:
+  push:
+   branches:
+      -main
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+  steps:
+   -name: Checkout Code
+    uses: actions/checkout@v4
+
+   -name: Print Hello
+    run: echos "hello CI is running"
+  
+   -name: Show Files
+    run: ls -l 
