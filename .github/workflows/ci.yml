@@ -20,3 +20,5 @@ jobs:
       - name: Show Files
         run: ls -l
 
+      - name: Run Container Image
+        run: docker build -t mohit-ci-image:v1
